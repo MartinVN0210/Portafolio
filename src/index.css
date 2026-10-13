@@ -1,0 +1,128 @@
+@import "tailwindcss";
+
+@theme {
+  --color-on-primary-fixed-variant: #5b21b6;
+  --color-background: #09090b;
+  --color-on-tertiary-fixed-variant: #047857;
+  --color-on-primary-fixed: #2e1065;
+  --color-on-secondary-fixed-variant: #3f3f46;
+  --color-on-error: #1a0000;
+  --color-on-surface: #fafafa;
+  --color-on-surface-variant: #a1a1aa;
+  --color-on-primary-container: #ede9fe;
+  --color-surface: #0c0c0f;
+  --color-on-secondary-fixed: #18181b;
+  --color-on-secondary: #09090b;
+  --color-surface-variant: #18181b;
+  --color-surface-dim: #0c0c0f;
+  --color-on-secondary-container: #a1a1aa;
+  --color-inverse-primary: #5b21b6;
+  --color-on-tertiary-container: #bbf7d0;
+  --color-error: #ef4444;
+  --color-tertiary-fixed: #bbf7d0;
+  --color-surface-container-highest: #1e1e22;
+  --color-tertiary: #34d399;
+  --color-primary-container: #7c3aed;
+  --color-tertiary-fixed-dim: #6ee7b7;
+  --color-surface-container-high: #18181b;
+  --color-on-error-container: #fca5a5;
+  --color-surface-tint: #a78bfa;
+  --color-primary-fixed-dim: #c4b5fd;
+  --color-inverse-on-surface: #09090b;
+  --color-primary-fixed: #ede9fe;
+  --color-on-primary: #0a0012;
+  --color-tertiary-container: #065f46;
+  --color-secondary-fixed: #a1a1aa;
+  --color-surface-container-lowest: #09090b;
+  --color-primary: #a78bfa;
+  --color-error-container: #3b1111;
+  --color-surface-container: #121215;
+  --color-outline-variant: #27272a;
+  --color-inverse-surface: #fafafa;
+  --color-secondary-container: #27272a;
+  --color-surface-bright: #18181b;
+  --color-on-tertiary-fixed: #003318;
+  --color-outline: #52525b;
+  --color-secondary-fixed-dim: #71717a;
+  --color-secondary: #71717a;
+  --color-on-background: #fafafa;
+  --color-surface-container-low: #0f0f12;
+  --color-on-tertiary: #001a12;
+
+  --font-headline: "Geist", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-display: "Geist", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: "Geist", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-label: "Geist", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+@layer base {
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #09090b;
+    color: #fafafa;
+    font-family: var(--font-body);
+    scroll-behavior: smooth;
+  }
+
+  body {
+    overscroll-behavior: none;
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  user-select: none;
+}
+
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+}
+
+#root {
+  position: relative;
+  z-index: 1;
+}
+
+#root > div.bg-background,
+#root main.bg-background {
+  background-color: transparent !important;
+}
+
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 0;
+  }
+
+  html,
+  body,
+  #root {
+    height: auto !important;
+    min-height: 0 !important;
+    overflow: visible !important;
+    background: #fff !important;
+    color: #000 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  #particles-js {
+    display: none !important;
+  }
+}
+
