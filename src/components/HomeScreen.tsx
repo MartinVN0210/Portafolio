@@ -90,7 +90,7 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({ onOpenContactModal }) =>
                         <div className="md:col-span-7 flex flex-col items-start">
                             <span className="text-xs uppercase tracking-widest text-primary font-mono font-medium mb-3">Trayectoria & Filosofía</span>
                             <h2 className="text-3xl font-headline font-bold text-on-surface tracking-tight mb-6">Sobre Mí</h2>
-                            <p className="text-sm md:text-base text-on-surface-variant leading-relaxed">{DEVELOPER_PROFILE.aboutText}</p>
+                            <p className="text-sm md:text-base text-on-surface-variant leading-relaxed whitespace-pre-line">{DEVELOPER_PROFILE.aboutText}</p>
                         </div>
                     </div>
                 </section>

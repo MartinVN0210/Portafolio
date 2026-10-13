@@ -613,8 +613,7 @@ export const DEVELOPER_PROFILE = {
   stackSummary: 'STACK: WEB & MOBILE',
   expYear: 'EXP: 2026',
   aboutText:
-    'Soy un ingeniero en desarrollo de software multiplataforma con un fuerte interés en crear soluciones tecnológicas útiles, accesibles y bien estructuradas. Me gusta trabajar en proyectos que representen un reto, donde pueda aplicar la lógica, la creatividad y buenas prácticas de desarrollo. Tengo experiencia desarrollando aplicaciones tanto web como móviles, y disfruto aprender constantemente para mantenerme actualizado con las tendencias y metodologías del sector. Actualmente estoy enfocado en seguir creciendo profesionalmente, explorando nuevas áreas como AI y el desarrollo frontend moderno.',
-  education: {
+  'Soy un ingeniero en desarrollo de software multiplataforma con un fuerte interés en crear soluciones tecnológicas útiles, accesibles y bien estructuradas.\n\nDisfruto aprender constantemente y explorar nuevas áreas como AI y el desarrollo frontend moderno.',  education: {
     degree: 'Ingeniería en Software',
     period: '2021 — 2025 (En curso • Estadías Profesionales)',
     focus: 'Arquitectura de Sistemas, Desarrollo Móvil, Ingeniería de Datos y Machine Learning Aplicado',
